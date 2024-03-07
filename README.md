@@ -6,6 +6,8 @@ This tool is a simple Windows command-line application that allows users to look
 
 All credit for the dictionary API goes to [DictionaryAPI.dev](https://dictionaryapi.dev/), which provides a free and open API for fetching word definitions. This tool simply acts as a user-friendly interface to access the API's data.
 
+![Screenshot](./documentation/images/screenshot.png)
+
 ## Features
 
 - Look up English word definitions quickly from the command line.
