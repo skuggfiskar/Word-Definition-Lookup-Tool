@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Dubug Word",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "word.py",
+            "console": "integratedTerminal",
+            "args": [
+                "${input:argumentPrompt}"
+            ]
+        },
+        {
+            "name": "Dubug Synonym",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "synonym.py",
+            "console": "integratedTerminal",
+            "args": [
+                "${input:argumentPrompt}"
+            ]
+        },
+    ],
+    "inputs": [
+        {
+            "id": "argumentPrompt",
+            "type": "promptString",
+            "description": "Enter the argument you want to use:"
+        }
+    ]
+}

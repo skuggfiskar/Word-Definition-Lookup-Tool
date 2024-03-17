@@ -36,7 +36,16 @@ All credit for the dictionary API goes to [DictionaryAPI.dev](https://dictionary
 
    Ensure the path `C:\source\word\word.py` points to where the `word.py` script is located on your system.
 
-5. Make sure the directory containing `word.cmd` is added to your system's PATH. This allows you to run the `word` command from anywhere in the Command Prompt.
+5. Create a `.cmd` file named `synonym.cmd` in a directory that is in your PATH (e.g., `C:\cmd`). Add the following content to this file:
+
+   ```
+   @echo off
+   python "C:\source\word\synonym.py" %*
+   ```
+
+   Ensure the path `C:\source\word\synonym.py` points to where the `synonym.py` script is located on your system.
+
+6. Make sure the directory containing `word.cmd` and `synonym.cmd` is added to your system's PATH. This allows you to run the `word` and `synonym` command from anywhere in the Command Prompt.
 
 ## Usage
 
